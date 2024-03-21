@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="support.html">
+    <link rel="stylesheet" href="about.html">
+</head>
+<body>
+    <div class="hero">
+        <div class="navbar">
+            <a href="{{ url_for('main') }}"><img src="{{ url_for('static', filename='logo8-01.png') }}" class="logo"></a>
+            <ul>
+                <li><a href="{{ url_for('main') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('support') }}">Support</a></li>
+            </ul>
+        </div>
+        <div class="congrats">
+            <h1>Playlist Converter</h1>
+            <br>
+            <p><p>Congratulation conversion successful here is a link to your created playlist</p>
+            {% if spotify_link %}
+                <p>Spotify Playlist Link: <a href="https://open.spotify.com/playlist/{{ spotify_link }}">Click Here</a></p>
+            {% else %}
+                <p>{{ error }}No linked ID available.</p>
+            {% endif %}
+            {% if youtube_link %}
+                <p>YouTube Playlist Link: <a href="https://music.youtube.com/playlist?list={{ youtube_link }}">Click Here</a></p>
+            {% else %}
+                <p>{{ error }}No linked ID available.</p>
+            {% endif %}
+
+
+        </div>
+    </div>
+</body>
+</html>

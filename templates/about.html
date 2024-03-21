@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About page</title>
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="convert.html">
+</head>
+<body>
+    <div class="hero">
+        <div class="navbar">
+            <a href="{{ url_for('main') }}"><img src="{{ url_for('static', filename='logo8-01.png') }}" class="logo"></a>
+            <ul>
+                <li><a href="{{ url_for('main') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('support') }}">Support</a></li>
+            </ul>
+        </div>
+        <div class="about">
+            <h1>About Playlist <br> Converter</h1>
+            <p>
+                Welcome to Playlist Converter! We're here to simplify your music experience by
+                offering an easy way to convert Spotify and YouTube playlists. Whether you're
+                switching platforms or creating backups, we've got you covered.
+                Our user-friendly platform ensures accuracy, speed, and convenience in transferring
+                your favorite playlists. Trust us to preserve every track and detail seamlessly.
+                Join us on this musical journey and enjoy the freedom to access your playlists across
+                different platforms. Discover the ease of Playlist Converter today!
+                </p>
+        </div>
+    </div>
+</body>
+</html>

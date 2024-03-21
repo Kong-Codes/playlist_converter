@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="support.html">
+    <link rel="stylesheet" href="about.html">
+</head>
+<body>
+    <div class="hero">
+        <div class="navbar">
+            <a href="{{ url_for('main') }}"><img src="{{ url_for('static', filename='logo8-01.png') }}" class="logo"></a>
+            <ul>
+                <li><a href="{{ url_for('main') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('support') }}">Support</a></li>
+            </ul>
+        </div>
+        <div class="support">
+            <h1>support page <br> Converter</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos labore autem ea, blanditiis quaerat voluptatibus perspiciatis temporibus eligendi ut ipsum, ipsa distinctio, reprehenderit id asperiores!
+                </p>
+        </div>
+    </div>
+</body>
+</html>

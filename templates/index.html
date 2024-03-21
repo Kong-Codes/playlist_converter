@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist converter</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="convert.html">
+</head>
+<body>
+    <div class="hero">
+        <div class="navbar">
+            <a href="{{ url_for('main') }}"><img src="{{ url_for('static', filename='logo8-01.png') }}" class="logo"></a>
+            <ul>
+                <li><a href="{{ url_for('main') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('support') }}">Support</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="left">
+                <h1>WELCOME TO <br>PLAYLIST CONVERTER</h1>
+                <H2>Convert your music playlist effortlessly with us!<br> Whether it's spotify or Youtube playlists, we've got you covered.<br> Say goodbye to format restrictions  and enjoy your favourite <br>tunes anywhere, anytime. Ready to transform your playlists? <br>Let's get started</H2>
+            </div>
+            <div class="right">
+                <form action="/convert" method="POST">
+                    <a href="convert.html"><button class="btn">CLICK TO CONVERT</button></a>
+                </form>
+                <!-- <button class="btn"onclick="window.location.href='http://www.convert.html';">click</button> -->
+        </div>
+    </div>
+</body>
+</html>
