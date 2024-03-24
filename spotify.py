@@ -3,8 +3,10 @@ import pprint
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 import os
-client_id = os.environ["SPOTIPY_CLIENT_ID"]
-client_secret = os.environ["SPOTIPY_CLIENT_SECRET"]
+from dotenv import load_dotenv
+load_dotenv()
+client_id = os.environ.get("SPOTIPY_CLIENT_ID")
+client_secret = os.environ.get("SPOTIPY_CLIENT_SECRET")
 user_id1 = "31pzol73ivznps56jgpx54g2g4ce"
 
 sp = spotipy.Spotify(
