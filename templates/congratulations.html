@@ -24,12 +24,12 @@
             <br>
             <p><p>Congratulation conversion successful here is a link to your created playlist</p>
             {% if spotify_link %}
-                <p>Spotify Playlist Link: <a href="https://open.spotify.com/playlist/{{ spotify_link }}">Click Here</a></p>
+                <p>Spotify Playlist Link: <a href="https://open.spotify.com/playlist/{{ spotify_link }}"><button class="click_button">Click Here</button></a></p>
             {% else %}
                 <p>{{ error }}No linked ID available.</p>
             {% endif %}
             {% if youtube_link %}
-                <p>YouTube Playlist Link: <a href="https://music.youtube.com/playlist?list={{ youtube_link }}">Click Here</a></p>
+                <p>YouTube Playlist Link: <a href="https://music.youtube.com/playlist?list={{ youtube_link }}"><button class="click_button">Click Here</button></a></p>
             {% else %}
                 <p>{{ error }}No linked ID available.</p>
             {% endif %}
