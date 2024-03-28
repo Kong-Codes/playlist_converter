@@ -51,7 +51,7 @@ def final_page():
         elif conversion_type == 'Youtube-Spotify':
             lam = query.split('=')
             if len(lam) >= 1:  # Ensure we have at least 1 parts after splitting
-                music = get_playlist(lam[1].split('&'))
+                music = get_playlist(lam[1].split('&')[0])
                 spotify_link = spotify_search(name, desc, music)
             else:
                 error = "Invalid query format for Youtube-Spotify conversion"
