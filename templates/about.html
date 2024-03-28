@@ -3,23 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=poppins&display=swap" rel="stylesheet">
     <title>About page</title>
     <link rel="stylesheet" href="index.html">
-    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href={{url_for('static', filename='style.css')}}>
     <link rel="stylesheet" href="convert.html">
+    <!-- <link rel="stylesheet" href="screen.css"> -->
+    <link rel="stylesheet" href="support.html">
 </head>
 <body>
     <div class="hero">
         <div class="navbar">
-            <a href="{{ url_for('main') }}"><img src="{{ url_for('static', filename='logo8-01.png') }}" class="logo"></a>
-            <ul>
+            <a href="{{ url_for('main') }}"><img src="{{ url_for('static', filename='updated lodo-01-final-01.png') }}" class="logo"></a>
+            <ul class="nav-list" id="navList">
                 <li><a href="{{ url_for('main') }}">Home</a></li>
                 <li><a href="{{ url_for('about') }}">About</a></li>
                 <li><a href="{{ url_for('support') }}">Support</a></li>
             </ul>
+
         </div>
+        <section class="about-us">
+            <div class="main">
+                <img src="images/display future loginpage-01.png" alt="">
         <div class="about">
-            <h1>About Playlist <br> Converter</h1>
+            <h1>About us</h1> 
+            <h3>The platform <span> & Our Goal </span></h3>
             <p>
                 Welcome to Playlist Converter! We're here to simplify your music experience by
                 offering an easy way to convert Spotify and YouTube playlists. Whether you're
@@ -29,7 +39,10 @@
                 Join us on this musical journey and enjoy the freedom to access your playlists across
                 different platforms. Discover the ease of Playlist Converter today!
                 </p>
+                <button type="button">Make Suggestions</button>
         </div>
+        </div>
+        </section>
     </div>
 </body>
 </html>
